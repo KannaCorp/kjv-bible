@@ -22,6 +22,15 @@
   "downloadUrl": "https://play.google.com/store/apps/details?id=com.kanna.bible",
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
   "author": { "@type": "Organization", "name": "Kannacorp", "url": "https://kannacorp.github.io" }
+ @context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"Is there a free KJV Bible app?","acceptedAnswer":{"@type":"Answer","text":"Yes. KJV Bible & AI Insights is free. It includes the complete King James Version, Old and New Testament, with a daily verse, journal, favourites and offline reading."}},
+    {"@type":"Question","name":"Does the KJV Bible app work offline?","acceptedAnswer":{"@type":"Answer","text":"Yes. Core reading works without an internet connection. The AI context feature needs a connection."}},
+    {"@type":"Question","name":"What does the AI feature do?","acceptedAnswer":{"@type":"Answer","text":"Tap any verse or chapter to get historical and cultural context behind the words, like study notes. It is a companion to study, not a replacement for prayer, your church, or the Holy Spirit."}},
+    {"@type":"Question","name":"Is it available for iPhone and Android?","acceptedAnswer":{"@type":"Answer","text":"Yes, free on both the App Store for iPhone and Google Play for Android."}},
+    {"@type":"Question","name":"Which Bible translation does it use?","acceptedAnswer":{"@type":"Answer","text":"The complete King James Version (KJV), with every book and chapter."}}
+  ]
 }
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -163,6 +172,19 @@
     .js .reveal{transition:none}
     .cta{transition:none}
   }
+ <!-- (1) CSS -->
+<style>
+  .faq{padding:74px 0}
+  .faq .wrap{max-width:760px}
+  .faq h2{font-family:var(--serif);font-size:clamp(1.7rem,4.6vw,2.4rem);font-weight:500;text-align:center;margin-bottom:36px}
+  .faq details{border-top:1px solid var(--line);padding:20px 0}
+  .faq details:last-child{border-bottom:1px solid var(--line)}
+  .faq summary{font-family:var(--serif);font-size:1.2rem;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:16px;color:var(--ink)}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"+";color:var(--accent);font-size:1.4rem;line-height:1}
+  .faq details[open] summary::after{content:"–"}
+  .faq p{color:var(--ink-soft);margin-top:12px;line-height:1.7}
+</style>
 </style>
 </head>
 <body>
@@ -272,6 +294,18 @@
       </a>
     </div>
       <span class="cta-note">Download on the App Store and Google Play store.</span>
+  </div>
+</section>
+
+ <!-- (2) VISIBLE SECTION -->
+<section class="faq">
+  <div class="wrap">
+    <h2>Frequently asked questions</h2>
+    <details><summary>Is there a free KJV Bible app?</summary><p>Yes. KJV Bible &amp; AI Insights is free. It includes the complete King James Version — Old and New Testament — with a daily verse, journal, favourites and offline reading.</p></details>
+    <details><summary>Does the KJV Bible app work offline?</summary><p>Yes. Core reading works without an internet connection, so the text is always with you. The AI context feature needs a connection.</p></details>
+    <details><summary>What does the AI feature do?</summary><p>Tap any verse or chapter to get historical and cultural context behind the words — like study notes in your pocket. It's a companion to your study, not a replacement for prayer, your church, or the Holy Spirit. Scripture remains the authority.</p></details>
+    <details><summary>Is it available for iPhone and Android?</summary><p>Yes. KJV Bible &amp; AI Insights is available free on both the App Store (iPhone) and Google Play (Android).</p></details>
+    <details><summary>Which Bible translation does it use?</summary><p>The complete King James Version (KJV), the classic 1611 English translation, with every book and chapter.</p></details>
   </div>
 </section>
 
