@@ -342,23 +342,5 @@
     });
   })();
 </script>
-
- <script>
-(function () {
-  var ua = navigator.userAgent || navigator.vendor || window.opera || "";
-  var isIOS = (/iPad|iPhone|iPod/.test(ua) && !window.MSStream) ||
-              (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1); // iPadOS
-  var isAndroid = /android/i.test(ua);
- 
-  var apple  = document.querySelectorAll('a[href*="apps.apple.com"]');
-  var google = document.querySelectorAll('a[href*="play.google.com"]');
- 
-  function hide(list){ list.forEach(function(el){ el.style.display = "none"; }); }
- 
-  if (isIOS)      { hide(google); }   // iPhone: samo App Store
-  else if (isAndroid) { hide(apple); } // Android: samo Google Play
-  // desktop / nepoznato: ostavi oba
-})();
-</script>
 </body>
 </html>
